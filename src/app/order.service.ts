@@ -5,7 +5,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 
 import { Order } from './order';
-import { ORDERS } from './mock-orders';
 
 @Injectable({
   providedIn: 'root'
@@ -34,7 +33,7 @@ export class OrderService {
             }
           })
         }),
-        tap(orders => this.log('fetched ' + orders.length + 'orders')),
+        tap(orders => this.log('fetched ' + orders.length + ' orders')),
         catchError(this.handleError('getOrders', []))
       );
   }
