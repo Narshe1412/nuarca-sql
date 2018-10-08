@@ -11,7 +11,7 @@ import { ORDERS } from './mock-orders';
   providedIn: 'root'
 })
 export class OrderService {
-  private apiUrl = 'http://localhost:3000/';  // URL to web api TODO
+  private apiUrl = 'https://nuarca-test.herokuapp.com';  // URL to web api TODO
 
   constructor(
     private http: HttpClient,
