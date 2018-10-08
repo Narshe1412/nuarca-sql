@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const mysql = require('mysql');
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -6,19 +7,18 @@ const connection = mysql.createConnection({
     password: '',
     database: 'nuarca'
 });
+connection.connect();
 
 const app = express();
 
+app.use(cors());
 app.set('port', process.env.PORT || 3000);
 
 app.get('/', (req, res) => {
-    connection.connect();
-
     const query = "SELECT * FROM orderlist o, custlist c, replist r WHERE o.repId = r.repId AND o.custId = c.custId";
 
     connection.query(query, (err, result) => {
         if (err) throw err;
-        connection.end();
         res.send(result);
     });
 })

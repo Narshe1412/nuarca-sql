@@ -11,23 +11,35 @@ import { ORDERS } from './mock-orders';
   providedIn: 'root'
 })
 export class OrderService {
-  private apiUrl = 'api/orders';  // URL to web api TODO
+  private apiUrl = 'http://localhost:3000/';  // URL to web api TODO
 
   constructor(
     private http: HttpClient,
     private messageService: MessageService) { }
 
-  /** GET heroes from the server */
+  /** GET orders from the server */
   getOrders(): Observable<Order[]> {
-    this.log('fetched orders');
     return this.http.get<Order[]>(this.apiUrl)
       .pipe(
-        tap(orders => this.log('fetched orders')),
+        map((response: any) => {
+          return response.map(row => {
+            return {
+              orderDate: row.orderDate,
+              region: row.region,
+              rep: row.repName,
+              item: row.item,
+              units: row.units,
+              unitCost: row.unitPrice,
+              customer: row.custName
+            }
+          })
+        }),
+        tap(orders => this.log('fetched ' + orders.length + 'orders')),
         catchError(this.handleError('getOrders', []))
       );
   }
 
-  /** Log a HeroService message with the MessageService */
+  /** Log a OrderService message with the MessageService */
   private log(message: string) {
     this.messageService.add(`[LOG] OrderService: ${message}`);
   }
