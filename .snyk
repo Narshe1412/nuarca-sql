@@ -144,6 +144,8 @@ patch:
         patched: '2019-10-10T09:37:19.800Z'
     - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
         patched: '2019-10-10T09:37:19.800Z'
+    - '@angular-devkit/build-angular > @angular-devkit/build-webpack > webpack-merge > lodash':
+        patched: '2019-10-21T22:10:14.463Z'
   SNYK-JS-HTTPSPROXYAGENT-469131:
     - protractor > browserstack > https-proxy-agent:
         patched: '2019-10-04T08:14:33.179Z'
