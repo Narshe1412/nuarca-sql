@@ -155,3 +155,7 @@ patch:
         patched: '2019-10-04T08:14:33.179Z'
     - protractor > saucelabs > https-proxy-agent:
         patched: '2019-10-04T08:14:33.179Z'
+    - '@angular/cli > pacote > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-23T15:33:56.518Z'
+    - '@angular/cli > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
+        patched: '2019-10-23T15:33:56.518Z'

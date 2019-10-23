@@ -15,7 +15,7 @@
   "dependencies": {
     "@angular/animations": "^6.1.10",
     "@angular/common": "^6.1.10",
-    "@angular/compiler": "^6.1.10",
+    "@angular/compiler": "^6.1.0",
     "@angular/core": "^6.1.10",
     "@angular/forms": "^6.1.10",
     "@angular/http": "^6.1.10",
@@ -23,13 +23,13 @@
     "@angular/platform-browser-dynamic": "^6.1.10",
     "@angular/router": "^6.1.10",
     "bootstrap": "^4.3.1",
-    "core-js": "^2.6.10",
+    "core-js": "^2.6.9",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mysql": "^2.17.1",
     "rxjs": "~6.5.3",
     "zone.js": "~0.10.2",
-    "snyk": "^1.236.1"
+    "snyk": "^1.237.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.9",
