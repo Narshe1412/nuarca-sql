@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.14.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -159,3 +159,10 @@ patch:
         patched: '2019-10-23T15:33:34.771Z'
     - '@angular/cli > pacote > npm-registry-fetch > make-fetch-happen > https-proxy-agent':
         patched: '2019-10-23T15:33:34.771Z'
+  SNYK-JS-TREEKILL-536781:
+    - '@angular-devkit/build-angular > tree-kill':
+        patched: '2019-12-11T22:03:58.579Z'
+    - '@angular-devkit/build-angular > @ngtools/webpack > tree-kill':
+        patched: '2019-12-11T22:03:58.579Z'
+    - snyk > snyk-sbt-plugin > tree-kill:
+        patched: '2019-12-11T22:03:58.579Z'
