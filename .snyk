@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -146,6 +146,8 @@ patch:
         patched: '2019-10-10T09:37:19.800Z'
     - '@angular-devkit/build-angular > @angular-devkit/build-webpack > webpack-merge > lodash':
         patched: '2019-10-21T22:10:14.463Z'
+    - '@angular/cli > inquirer > lodash':
+        patched: '2020-03-11T11:42:42.915Z'
   SNYK-JS-HTTPSPROXYAGENT-469131:
     - protractor > browserstack > https-proxy-agent:
         patched: '2019-10-04T08:14:33.179Z'
