@@ -32,7 +32,7 @@
     "snyk": "^1.299.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.901.7",
+    "@angular-devkit/build-angular": "~0.901.8",
     "@angular/cli": "~6.2.9",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/language-service": "^6.1.10",
